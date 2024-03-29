@@ -26,7 +26,7 @@ Type "disks" into the search field and click on the icon.
   <img src="images/disks.jpg" />
 </div>
 <br>
-Click on the larger partition on the right and then on the right icon below the partistions.
+Click on the larger partition on the right and then on the right icon below the partitions.
 <br>
 <div style="text-align: center;">
   <img src="images/disks_1.jpg" />
@@ -46,15 +46,18 @@ Now the partition is maximized. Close the disks utility.
 <br>
 Open the terminal and first delete the swapfile, so the sccript can create a larger one.
 <br>
+
 ```shell
 sudo rm /var/swapfile
 ```
+
+Download the script, make it executable and start it.
 <br>
-<div style="text-align: center;">
-  <img src="images/start_script.jpg" />
-</div>
-<br>
-Open the terminal and first delete the swapfile, so the sccript can create a larger one.
-<br>
-Download the install script from github.
+
+```shell
+wget https://github.com/StefansAI/Yolov8_JetsonNano/tree/main/scripts/yolov8_install.sh
+chmod +x yolov8_install.sh
+./yolov8_install.sh
+```
+
 
