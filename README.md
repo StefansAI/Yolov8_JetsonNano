@@ -44,7 +44,7 @@ Now the partition is maximized. Close the disks utility.
   <img src="images/disks3.jpg" />
 </div>
 <br>
-Open the terminal and first delete the swapfile, so the sccript can create a larger one.
+Open the terminal and first delete the swapfile, so the script can create a larger one.
 <br>
 
 ```shell
