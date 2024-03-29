@@ -29,19 +29,19 @@ Type "disks" into the search field and click on the icon.
 Click on the larger partition on the right and then on the right icon below the partitions.
 <br>
 <div style="text-align: center;">
-  <img src="images/disks_1.jpg" />
+  <img src="images/disks1.jpg" />
 </div>
 <br>
 Move the slider all the way to right to resize to the maximum. Hit the resize button top right.
 <br>
 <div style="text-align: center;">
-  <img src="images/disks_2.jpg" />
+  <img src="images/disks2.jpg" />
 </div>
 <br>
 Now the partition is maximized. Close the disks utility.
 <br>
 <div style="text-align: center;">
-  <img src="images/disks_3.jpg" />
+  <img src="images/disks3.jpg" />
 </div>
 <br>
 Open the terminal and first delete the swapfile, so the sccript can create a larger one.
