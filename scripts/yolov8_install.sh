@@ -63,6 +63,9 @@ yolo predict model=yolov8n.pt source='https://ultralytics.com/images/bus.jpg'
 #yolo task=segment mode=predict model=yolov8n-seg.pt source=0 show=True imgsz=320
 
 #To test real-time detection of the GardenCam model on the video clip.
-#yolo task=detect mode=predict model=best-n.pt source=Videos/GardenCam10Hz.mp4 show=True
+cd Downloads
+wget https://github.com/StefansAI/Custom_Yolov8/raw/main/example/GardenCam-best-n.pt
+wget https://github.com/StefansAI/Custom_Yolov8/raw/main/example/GardenCam.mp4
+yolo task=detect mode=predict model=best-n.pt source=Videos/GardenCam10Hz.mp4 show=True
 
 
