@@ -13,6 +13,13 @@ Download <a href="https://github.com/Qengineering/Jetson-Nano-Ubuntu-20-image">U
 </div>
 <br>
 <br>
+Make sure that everything is updated to the latest.
+<br>
+<div style="text-align: center;">
+  <img src="images/update.jpg" />
+</div>
+<br>
+<br>
 The image is compacted, so the first action is expanding the partition to the maximum.<br>
 After the boot, click on the lower left corner.
 <br><br>
@@ -59,7 +66,7 @@ wget https://raw.githubusercontent.com/StefansAI/Yolov8_JetsonNano/main/scripts/
 chmod +x yolov8_install.sh
 ./yolov8_install.sh
 ```
-<br>--------------------------------------------------------------------------------------------------------------------------------------------------<br>
+<br>---------------------------------------------------------------------------------------------<br>
 <br>
 To test real-time detection from the camera device 0 (i.e. USB camera):
 <br>
@@ -79,9 +86,9 @@ To test real-time detection of the GardenCam model on the video clip.
 <br>
 
 ```shell
-cd Downloads
-wget https://github.com/StefansAI/Custom_Yolov8/blob/main/example/GardenCam-best-n.pt
-wget https://github.com/StefansAI/Custom_Yolov8/blob/main/example/GardenCam.mp4
+cd ~/Downloads
+wget https://github.com/StefansAI/Custom_Yolov8/raw/main/example/GardenCam-best-n.pt
+wget https://github.com/StefansAI/Custom_Yolov8/raw/main/example/GardenCam.mp4
 yolo task=detect mode=predict model=GardenCam-best-n.pt source=GardenCam.mp4 show=True
 ```
 
