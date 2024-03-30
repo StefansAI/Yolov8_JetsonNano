@@ -50,14 +50,39 @@ Open the terminal and first delete the swapfile, so the script can create a larg
 ```shell
 sudo rm /var/swapfile
 ```
-
+<br>
 Download the script, make it executable and start it.
 <br>
 
 ```shell
-wget https://github.com/StefansAI/Yolov8_JetsonNano/tree/main/scripts/yolov8_install.sh
+wget https://raw.githubusercontent.com/StefansAI/Yolov8_JetsonNano/main/scripts/yolov8_install.sh
 chmod +x yolov8_install.sh
 ./yolov8_install.sh
+```
+<br>--------------------------------------------------------------------------------------------------------------------------------------------------<br>
+<br>
+To test real-time detection from the camera device 0 (i.e. USB camera):
+<br>
+
+```shell
+yolo task=detect mode=predict model=yolov8n.pt source=0 show=True
+```
+<br>
+To test real-time segmentation from the camera device 0 (i.e. USB camera):
+<br>
+
+```shell
+yolo task=segment mode=predict model=yolov8n-seg.pt source=0 show=True imgsz=320
+```
+<br>
+To test real-time detection of the GardenCam model on the video clip.
+<br>
+
+```shell
+cd Downloads
+wget https://github.com/StefansAI/Custom_Yolov8/blob/main/example/GardenCam-best-n.pt
+wget https://github.com/StefansAI/Custom_Yolov8/blob/main/example/GardenCam.mp4
+yolo task=detect mode=predict model=GardenCam-best-n.pt source=GardenCam.mp4 show=True
 ```
 
 

@@ -55,11 +55,14 @@ sudo apt install -y libopenmpi-dev libomp-dev libopenblas-dev libblas-dev libeig
 #https://github.com/ultralytics/ultralytics?tab=readme-ov-file
 pip3 install ultralytics
 
+#Test run to check correct detection of 4 persons, 1 bus, 1 stop sign on this image
 yolo predict model=yolov8n.pt source='https://ultralytics.com/images/bus.jpg'
 
-yolo task=detect mode=predict model=yolov8n.pt source=0 show=True
-yolo task=segment mode=predict model=yolov8n-seg.pt source=0 show=True imgsz=320
+#Test real-time detection and segmentation from camera input (device 0)
+#yolo task=detect mode=predict model=yolov8n.pt source=0 show=True
+#yolo task=segment mode=predict model=yolov8n-seg.pt source=0 show=True imgsz=320
 
-yolo task=detect mode=predict model=best-n.pt source=Videos/GardenCam10Hz.mp4 show=True
+#To test real-time detection of the GardenCam model on the video clip.
+#yolo task=detect mode=predict model=best-n.pt source=Videos/GardenCam10Hz.mp4 show=True
 
 
