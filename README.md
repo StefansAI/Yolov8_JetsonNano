@@ -87,9 +87,24 @@ To test real-time detection of the GardenCam model on the video clip.
 
 ```shell
 cd ~/Downloads
-wget https://github.com/StefansAI/Custom_Yolov8/raw/main/example/GardenCam-best-n.pt
-wget https://github.com/StefansAI/Custom_Yolov8/raw/main/example/GardenCam.mp4
-yolo task=detect mode=predict model=GardenCam-best-n.pt source=GardenCam.mp4 show=True
+wget https://github.com/StefansAI/Custom_Yolov8/raw/main/example/GardenCam640.pt
+wget https://github.com/StefansAI/Custom_Yolov8/raw/main/example/GardenCam640.mp4
+yolo task=detect mode=predict model=GardenCam640.pt source=GardenCam640.mp4 show=True
 ```
 
+<br>
+There are also smaller size models available for testing:
+<br>
 
+```shell
+cd ~/Downloads
+wget https://github.com/StefansAI/Custom_Yolov8/raw/main/example/GardenCam320.pt
+wget https://github.com/StefansAI/Custom_Yolov8/raw/main/example/GardenCam320.mp4
+yolo task=detect mode=predict model=GardenCam320.pt source=GardenCam320.mp4 show=True
+
+wget https://github.com/StefansAI/Custom_Yolov8/raw/main/example/GardenCam224.pt
+wget https://github.com/StefansAI/Custom_Yolov8/raw/main/example/GardenCam224.mp4
+yolo task=detect mode=predict model=GardenCam224.pt source=GardenCam224.mp4 show=True
+```
+
+See how Jetson Nano compares to Raspberry Pi5: <a href="https://github.com/StefansAI/Yolov8_Rpi5_CoralUSB">Yolov8_Rpi5_CoralUSB</a>
