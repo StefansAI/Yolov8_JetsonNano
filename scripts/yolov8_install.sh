@@ -66,6 +66,6 @@ yolo predict model=yolov8n.pt source='https://ultralytics.com/images/bus.jpg'
 cd ~/Downloads
 wget https://github.com/StefansAI/Custom_Yolov8/raw/main/example/GardenCam640.pt
 wget https://github.com/StefansAI/Custom_Yolov8/raw/main/example/GardenCam640.mp4
-yolo task=detect mode=predict model=GardenCam640.pt source=GardenCam.mp4 show=True
+yolo task=detect mode=predict model=GardenCam640.pt source=GardenCam640.mp4 show=True
 
 
